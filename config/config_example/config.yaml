@@ -1,0 +1,37 @@
+pubsub:
+  project_id: silkrode-golang
+  topic_id: topic_kbc_dev_bot
+  # topic_id: topic_kbc_sit_bot
+  # topic_id: topic_kbc_prod_bot
+  credentials_file_path: ./pubsub_credentials.json
+
+potato_chat_bot:
+  api_url: https://api.rct2008.com:8443
+  webhook_url: https://d84e129961b7.ngrok.io
+  # webhook_url: https://kbc-order-chatbot-gbhzzlku2a-de.a.run.app/ #cloud run URL
+  # bot_token: 10275722:gAJ2HA0M7pCT32N92F9wt5U0 #jamie_bot
+  bot_token: 10275867:uW7O982b211ZRe46Pi3fX7hs #KBCSITbot
+  # bot_token: 10275868:El51Z9ACOoBA3YUGO0T4AMy9 #KBCPRODbot
+
+log:
+  level: INFO
+
+server:
+  port: 8080
+
+database:
+  driver: mysql
+  host: 10.1.1.111
+  port: 3307
+  user: test
+  password: test
+  dbname: kbc
+
+  # CLOUDSQL_DEV
+  # driver: mysql
+  # host: 35.223.215.69
+  # port: 3306
+  # user: kbcAdmin
+  # password: 123456
+  # dbname: kbc
+
